@@ -1,3 +1,5 @@
+// Login and register data is still saved locally and will be deleted if the application is closed/refreshed.
+
 var firstNameArray = [];
 var lastNameArray = [];
 var emailArray = [];
