@@ -2,7 +2,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 20px;
-  background: #eee;
+  background: #ffffff;
   min-height: 3000px;
   padding: 0;
   margin: 0;
@@ -13,6 +13,24 @@ body{
   width: 80%;
   margin: 0 auto;
   clear: both;
+}
+.flex-container1 {
+  display: flex;
+  background-color: DodgerBlue;
+  align-items: center;
+}
+
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+
+.flex-container1 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  align-items: center;
 }
 a{
   display: inline-block;
@@ -34,6 +52,11 @@ nav {
   width: 100%;
   z-index: 9998;
   transition: all 0.5s;
+}
+.nav a.split {
+  float: right;
+  background-color: blueviolet;
+  color: white;
 }
   .scrollUp{
     transform: translateY(-80px)
@@ -77,7 +100,140 @@ nav {
       margin: 5px 0;
     }      
     
+    .about {
+      margin: 3rem 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+    .about-header {
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .about-header {
+        text-align: center;
+      }
+    }
+    .about-header h1 {
+      font-weight: 700;
+      font-size: 3.2rem;
+      color: #666;
+      text-align: center
+    }
+    .about-content p {
+      color: #181b2c;
+      text-align: justify;
+      text-justify: inter-word;
+    }
 
+    .contact h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3.2rem;
+      color: #666;
+      justify-content: center;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      margin: 10px 2em;
+    }
+    .flex-item-left {
+      padding: 10px;
+      flex: 50%;
+    }
+    .flex-item-left h4 {
+      font-weight: 700;
+      color: #666;
+    }
+    .flex-item-left p {
+      font-weight: 400;
+      color: #666;
+    }
+    .flex-item-right {
+      padding: 10px;
+      flex: 50%;
+    }
+    .flex-item-right form {
+      margin: 10px;
+    }
+    .flex-item-right form input[type="text"],
+    select,
+    textarea {
+      font-weight: 400;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    .flex-item-right button {
+      background-color: #666;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 100%;
+    }
+    .flex-item-right button:hover,
+    .flex-item-right button:focus {
+      background-color: #666;
+      color: white;
+    }
+
+    .flex-item-center {
+      padding: 10px;
+      flex: 50%;
+    }
+    .flex-item-center form {
+      margin: 10px;
+    }
+    .flex-item-center form input[type="text"],
+    select,
+    textarea {
+      font-weight: 400;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    .flex-item-center button {
+      background-color: #666;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 100%;
+    }
+    .flex-item-center button:hover,
+    .flex-item-center button:focus {
+      background-color: #666;
+      color: white;
+    }
+
+
+    
 @media (max-width: 768px){
   nav ul.navbar-menu{
     display: none;
