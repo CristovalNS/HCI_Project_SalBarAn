@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 return ;
             }
             else if (password != passwordRetype ){
-                alert("Password don't match retype your Password.");
+                alert("Password does not match. Please re-type your Password.");
                 return;
             }
             else if(emailArray.indexOf(email) == -1){
                 emailArray.push(email);
                 passwordArray.push(password);
             
-                alert(firstName + ", Thanks for registration. \nTry to login Now");
+                alert("Thank you for registering,", firstName, "\nTry logging in!");
 
                 document.getElementById("fn").value ="";
                 document.getElementById("ln").value ="";
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 loginForm.classList.remove("form--hidden");
             }
             else{
-                alert(email + " is already register.");
+                alert(email + " is already registered.");
                 return ;
             }
         });
