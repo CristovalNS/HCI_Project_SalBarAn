@@ -1,5 +1,5 @@
-var emailArray=[];
-var passwordArray=[];
+// var emailArray=[];
+// var passwordArray=[];
 
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
@@ -19,39 +19,39 @@ function clearInputError(inputElement) {
     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
 }
 
-function login(){
-    event.preventDefault();
+// function login(){
+//     event.preventDefault();
 
-    var email = document.getElementById("se").value;
-    var password = document.getElementById("sp").value;
+//     var email = document.getElementById("se").value;
+//     var password = document.getElementById("sp").value;
 
-    var i = emailArray.indexOf(email);
+//     var i = emailArray.indexOf(email);
 
-    if(emailArray.indexOf(email) == -1){
-        if (email == ""){
-            alert("Email required.");
-            return ;
-        }
-        alert("Email does not exist.");
-        return ;
-    }
-    else if(passwordArray[i] != password){
-        if (password == ""){
-            alert("Password required.");
-            return ;
-        }
-        alert("Password does not match.");
-        return ;
-    }
-    else {
-        alert(email + " yor are login Now \n welcome to our website.");
+//     if(emailArray.indexOf(email) == -1){
+//         if (email == ""){
+//             alert("Email required.");
+//             return ;
+//         }
+//         alert("Email does not exist.");
+//         return ;
+//     }
+//     else if(passwordArray[i] != password){
+//         if (password == ""){
+//             alert("Password required.");
+//             return ;
+//         }
+//         alert("Password does not match.");
+//         return ;
+//     }
+//     else {
+//         alert(email + " yor are login Now \n welcome to our website.");
 
-        document.getElementById("se").value ="";
-        document.getElementById("sp").value="";
-        return ;
-    }
+//         document.getElementById("se").value ="";
+//         document.getElementById("sp").value="";
+//         return ;
+//     }
 
-}
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
