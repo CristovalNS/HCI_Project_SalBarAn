@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 emailArray.push(email);
                 passwordArray.push(password);
             
-                alert("Thank you for registering,", firstName, "\nTry logging in!");
+                alert("Thank you for registering, " + firstName + "\nTry logging in!");
 
                 document.getElementById("fn").value ="";
                 document.getElementById("ln").value ="";
