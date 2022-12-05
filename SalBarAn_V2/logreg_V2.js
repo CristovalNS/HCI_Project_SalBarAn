@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 return ;
             }
             else if (passwordRetype == ""){
-                alert("Password required.");
+                alert("Please re-type your password.");
                 return ;
             }
-            else if (password != passwordRetype ){
+            else if (password != passwordRetype){
                 alert("Password does not match. Please re-type your Password.");
                 return;
             }
