@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         document.querySelector("#continueReg").addEventListener("click", e => {
+            e.preventDefault();
             var firstName = document.getElementById("fn").value;
             var lastName = document.getElementById("ln").value;
             var email = document.getElementById("re").value;
@@ -78,9 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
             createAccountForm.classList.add("form--hidden");
         });
 
-        loginForm.addEventListener("submit", e => {
+        // loginForm.addEventListener("submit", e => {
 
-        });
+        // });
 
         document.querySelector("#continueLog").addEventListener("click", e => {
             e.preventDefault();
