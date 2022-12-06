@@ -7,23 +7,40 @@ body{
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif
-  
 }
+
+/* Navigation bar */
+a{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}  
+
 .container{
   width: 80%;
   margin: 0 auto;
   clear: both;
 }
-.flex-container1 {
-  display: flex;
-  background-color: DodgerBlue;
-  align-items: center;
+
+/* Services */
+.services {
+  margin-top: -20px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
 }
 
-  .center{
-    display: flex;
-    justify-content: center;
-  }
+/* Box container for services */
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: 1vh solid #181b2c; */
+  border-radius: 25px;
+  justify-content: center;
+  
+}
 
 .flex-container1 > div {
   background-color: #f1f1f1;
@@ -31,13 +48,47 @@ body{
   padding: 20px;
   font-size: 30px;
   align-items: center;
+  border-radius: 25px;
 }
-a{
-  display: inline-block;
+
+/* Icon buttons and text */
+.icon-pic {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.icon-text {
+  text-align: center;
+  font-size: 20px;
+}
+
+.booking {
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 1px;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+.booking-title {
   color: #333;
-  text-decoration: none;
-}  
-  
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
+.booking-data {
+  color: #333;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
 nav {
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,14 +104,17 @@ nav {
   z-index: 9998;
   transition: all 0.5s;
 }
+
 .nav a.split {
   float: right;
   background-color: blueviolet;
   color: white;
 }
-  .scrollUp{
-    transform: translateY(-80px)
+
+.scrollUp{
+  transform: translateY(-80px)
 }
+
   ul.navbar-menu{
     margin: 0;
     padding: 0;
@@ -99,7 +153,45 @@ nav {
       display: block;
       margin: 5px 0;
     }      
-    
+
+    .rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin: -30px;
+      }
+      
+      
+      .rating > input{ display:none;}
+      
+      .rating > label {
+      position: relative;
+      /* width: 1.1em; */
+      font-size: 10vw;
+      color: #FFD700;
+      cursor: pointer;
+      }
+      
+      .rating > label::before{
+      content: "\2605";
+      position: absolute;
+      opacity: 0;
+      }
+      
+      .rating > label:hover:before,
+      .rating > label:hover ~ label:before {
+      opacity: 1 !important;
+      }
+      
+      .rating > input:checked ~ label:before{
+      opacity:1;
+      }
+      
+      .rating:hover > input:checked ~ label:before { 
+        opacity: 0.4; 
+      }
+
+/* About Us */
     .about {
       margin: 3rem 4rem;
       display: flex;
@@ -108,57 +200,72 @@ nav {
       justify-content: center;
     }
     .about-header {
+      margin-top: 20px;
       text-align: center;
     }
+    
     @media (max-width: 768px) {
       .about-header {
         text-align: center;
       }
     }
+
     .about-header h1 {
       font-weight: 700;
       font-size: 3.2rem;
       color: #666;
       text-align: center
     }
+
     .about-content p {
+      margin-top: -10px;
       color: #181b2c;
-      text-align: justify;
+      text-align: center;
       text-justify: inter-word;
     }
 
+/* Contact Us */
     .contact h1 {
       text-align: center;
       font-weight: 700;
       font-size: 3.2rem;
       color: #666;
       justify-content: center;
+      margin-top: 50px;
     }
+
     .flex-container {
       display: flex;
       flex-wrap: wrap;
       text-align: center;
       margin: 10px 2em;
     }
+
     .flex-item-left {
       padding: 10px;
       flex: 50%;
     }
+
     .flex-item-left h4 {
       font-weight: 700;
       color: #666;
+      margin-top: 10px;
     }
+
     .flex-item-left p {
       font-weight: 400;
       color: #666;
     }
+
     .flex-item-right {
       padding: 10px;
       flex: 50%;
     }
+
     .flex-item-right form {
       margin: 10px;
     }
+
     .flex-item-right form input[type="text"],
     select,
     textarea {
@@ -172,6 +279,7 @@ nav {
       margin-bottom: 16px;
       resize: vertical;
     }
+
     .flex-item-right button {
       background-color: #666;
       border: none;
@@ -186,6 +294,7 @@ nav {
       border-radius: 3px;
       width: 100%;
     }
+
     .flex-item-right button:hover,
     .flex-item-right button:focus {
       background-color: #666;
@@ -195,10 +304,14 @@ nav {
     .flex-item-center {
       padding: 10px;
       flex: 50%;
+      margin-top: 10px;
+      margin-bottom: -30px;
     }
+
     .flex-item-center form {
       margin: 10px;
     }
+
     .flex-item-center form input[type="text"],
     select,
     textarea {
@@ -212,6 +325,7 @@ nav {
       margin-bottom: 16px;
       resize: vertical;
     }
+
     .flex-item-center button {
       background-color: #666;
       border: none;
@@ -226,6 +340,7 @@ nav {
       border-radius: 3px;
       width: 100%;
     }
+    
     .flex-item-center button:hover,
     .flex-item-center button:focus {
       background-color: #666;
