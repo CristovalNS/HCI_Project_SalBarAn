@@ -1,3 +1,4 @@
+/* Main website Css */
 body{
   flex-direction: row;
   flex-wrap: wrap;
@@ -61,7 +62,7 @@ a{
   text-align: center;
   font-size: 20px;
 }
-
+/* Booking Map */
 .booking {
   text-align: center;
   background-color: #f1f1f1;
@@ -109,10 +110,6 @@ nav {
   float: right;
   background-color: blueviolet;
   color: white;
-}
-
-.scrollUp{
-  transform: translateY(-80px)
 }
 
   ul.navbar-menu{
@@ -205,12 +202,6 @@ nav {
       text-align: center;
     }
     
-    @media (max-width: 768px) {
-      .about-header {
-        text-align: center;
-      }
-    }
-
     .about-header h1 {
       font-weight: 700;
       font-size: 3.2rem;
