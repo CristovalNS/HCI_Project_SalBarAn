@@ -152,8 +152,9 @@ nav {
       background: #333;
       display: block;
       margin: 5px 0;
-    }      
+    }
 
+/* Rating website section */
     .rating {
       display: flex;
       flex-direction: row-reverse;
@@ -354,7 +355,7 @@ nav {
     }
 
 
-    
+   /* Media function */
 @media (max-width: 768px){
   nav ul.navbar-menu{
     display: none;
@@ -363,4 +364,9 @@ nav {
     display: block;
   }
 }
-    
+ }
+@media (max-width: 768px) {
+  .about-header {
+    text-align: center;
+  }
+}
