@@ -126,11 +126,11 @@ nav {
   transition: all 0.5s;
 }
 
-.nav a.split {
+/* .nav a.split {
   float: right;
   background-color: blueviolet;
   color: white;
-}
+} */
 
   ul.navbar-menu{
     margin: 0;
@@ -146,12 +146,21 @@ nav {
         color: #666;
         font-size: 14px;
       }
-  a#brand{
+
+  #brand{
     text-transform: uppercase;
     float: left;
     font-weight: 800;
     font-size: 20px;
   }
+
+  #brand-h{
+    text-transform: uppercase;
+    float: left;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
   button{
     background: none;
     width: 30px;
@@ -163,21 +172,22 @@ nav {
     display: none;
   }
   
-  .btn{
+  /* .btn{
     background: none;
     display: inline-block;
     cursor: pointer;
     display: flex;
-  }
-  .pop-up{
+  } */
+  
+  /* .pop-up{
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-  }
+  } */
   
     span{
       width: 30px;
