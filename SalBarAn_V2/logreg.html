@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <!-- <link rel="shortcut icon" href="/assets/favicon.ico"> -->
+    <link rel="stylesheet" href="logreg.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <!-- Username/Email -->
+            <div class="form__input-group">
+                <input id = "se" type="text" class="form__input" autofocus placeholder="Email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <!-- Password -->
+            <div class="form__input-group">
+                <input id = "sp" type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <!-- Continue button -->
+            <button class="form__button" type="submit" id="continueLog">Continue</button>
+            <!-- Forgot Password -->
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkForgetPassword">Forgot your password?</a>
+            </p>
+            <!-- Register -->
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+
+            <!-- First Name -->
+            <div class="form__input-group">
+                <input type="text" id="fn" class="form__input" autofocus placeholder="First Name" required>
+                <!-- <div class="form__input-error-message"></div> -->
+            </div>
+
+            <!-- Last Name -->
+            <div class="form__input-group">
+                <input type="text" id="ln" class="form__input" autofocus placeholder="Last Name" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <!-- Email -->
+            <div class="form__input-group">
+                <input type="text" id="re" class="form__input" autofocus placeholder="Email Address" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <!-- Password -->
+            <div class="form__input-group">
+                <input type="password" id= "rp" class="form__input" autofocus placeholder="Password" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <!-- Confirm password -->
+            <div class="form__input-group">
+                <input type="password" id="rrp" class="form__input" autofocus placeholder="Confirm password" required>
+                <div class="form__input-error-message"></div>
+            <!-- Continue -->
+            </div>
+            <button class="form__button" type="submit" id="continueReg" value="Submit">Continue</button>
+            <!-- Login -->
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+
+    </div>
+    <script src="logreg.js"></script>
+</body>
+</html>
