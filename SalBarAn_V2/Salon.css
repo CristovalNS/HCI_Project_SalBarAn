@@ -10,10 +10,31 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.salon-header{
+    /* margin: 3rem 4rem; */
+    /* margin-top: 3rem;
+    margin-right: 3rem; */
+    margin-bottom: -2rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #666;
+    text-align: center
+}
+
 .container1 .post{
     display: none;
     align-items: center;
 }
+
 .container1 .text{
     font-size: 25px;
     color:#666;
@@ -31,21 +52,20 @@
     align-items: center;
 }
 
-
 .barb{
     margin-left: 0px;
-
 }
+
 .barb .box-container{
     align-items: center;  
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
     gap:5.5rem;
-    align-items: center;
 }
+
 .barb .box-container .box{
     cursor: pointer;
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
     font-size: 1.2rem;
     padding:2.5rem;
     align-items: center;
@@ -58,18 +78,37 @@
     text-align: center;
     
 }
+
 .barb .box-container .box h3{
     font-size: 25px;
 }
+
 .barb .box-container .box:hover{
     transform: scale(1.1);
 }
+
 .barb .box-container .box img{
     height: 100%;
     width: 100%;
     border-radius: 5px;
     
 }
+
 .barb .box-container .box span{
     font-size: 20px;
 }
+
+/* Media function */
+/* @media (max-width: 768px){
+  nav ul.navbar-menu{
+    display: none;
+  }
+  nav button{
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .about-header {
+    text-align: center;
+  }
+} */
