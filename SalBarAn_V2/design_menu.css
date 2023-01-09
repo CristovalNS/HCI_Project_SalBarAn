@@ -161,7 +161,19 @@ nav {
     font-size: 20px;
   }
 
-  button{
+  button {
+    /* background: none; */
+    /* width: 30px; */
+    height: 40px;
+    margin-top: 20px;
+    /* border: none; */
+    display: inline-block;
+    cursor: pointer;
+    /* display: none; */
+  }
+
+  
+  #mobile-nav{            /* TODO: FIX THIS */
     background: none;
     width: 30px;
     height: 40px;
@@ -169,7 +181,7 @@ nav {
     border: none;
     display: inline-block;
     cursor: pointer;
-    display: none;
+    /* display: none; */
   }
   
   /* .btn{
