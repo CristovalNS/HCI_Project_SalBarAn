@@ -11,6 +11,12 @@
     flex-direction: column;
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
 .barber-header{
     /* margin: 3rem 4rem; */
     /* margin-top: 3rem;
@@ -62,7 +68,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
     gap:5.5rem;
-    align-items: center;
+    margin-top: 50px;
 }
 
 .barb .box-container .box{

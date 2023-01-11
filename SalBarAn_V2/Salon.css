@@ -11,10 +11,18 @@
     flex-direction: column;
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
 .salon-header{
     /* margin: 3rem 4rem; */
-    /* margin-top: 3rem;
-    margin-right: 3rem; */
+    /* margin-top: 3rem; */
+    /* margin: auto; */
+    /* margin-right: -3rem; */
     margin-bottom: -2rem;
     display: flex;
     flex-wrap: wrap;
@@ -53,7 +61,7 @@
 }
 
 .barb{
-    margin-left: 0px;
+    /* margin: auto; */
 }
 
 .barb .box-container{
@@ -61,6 +69,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
     gap:5.5rem;
+    margin-top: 50px;
 }
 
 .barb .box-container .box{
@@ -97,18 +106,3 @@
 .barb .box-container .box span{
     font-size: 20px;
 }
-
-/* Media function */
-/* @media (max-width: 768px){
-  nav ul.navbar-menu{
-    display: none;
-  }
-  nav button{
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  .about-header {
-    text-align: center;
-  }
-} */
