@@ -109,6 +109,68 @@ hr {
   margin-top: 200px;
 }
 
+/* Mobile Navigation List */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.mobile-nav-container {
+  float: left;
+  overflow: hidden;
+}
+
+.mobile-nav-container .mobile-nav {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .mobile-nav-container:hover .mobile-nav {
+  background-color: red;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.mobile-menu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.mobile-menu a:hover {
+  background-color: #ddd;
+}
+
+.mobile-nav-container:hover .mobile-menu {
+  display: block;
+}
+
 /* navigation list */
 nav {
   flex-direction: row;
@@ -134,6 +196,7 @@ nav {
 
   ul.navbar-menu{
     margin: 0;
+    margin-right: 10px;
     padding: 0;
     display: inline-block;
   
@@ -156,9 +219,10 @@ nav {
 
   #brand-h{
     text-transform: uppercase;
-    float: left;
+    /* float: left; */
     font-weight: 800;
     font-size: 20px;
+    margin-left: 20px
   }
 
   button {
@@ -169,20 +233,19 @@ nav {
     /* border: none; */
     display: inline-block;
     cursor: pointer;
-    /* display: none; */
+    display: none;
   }
-
   
-  #mobile-nav{            /* TODO: FIX THIS */
-    background: none;
-    width: 30px;
-    height: 40px;
-    margin-top: 20px;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
+  /* #mobile-nav{
+    /* background: none; */
+    /* width: 30px; */
+    /* height: 40px; */
+    /* margin-top: 20px; */
+    /* border: none; */
+    /* display: inline-block; */
+    /* cursor: pointer; */
     /* display: none; */
-  }
+  /* } */
   
   /* .btn{
     background: none;
@@ -199,8 +262,9 @@ nav {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-  } */
-  
+  } 
+   */
+
     span{
       width: 30px;
       height: 40px;
